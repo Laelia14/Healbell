@@ -7,6 +7,7 @@ healclock:
         - if <player.has_permission[heal.bell]>:
         # You can give a Player (Jail) a Flag that he dont can use the Bell
           - if <player.has_flag[healglock.disable]>:
+            - debug debug "Healclock starting.."
             - heal
             - actionbar "<green>Die Glocke hat dich geheilt!"
           - else:
